@@ -512,6 +512,20 @@ call s:X("SpellCap","","0000df","underline","","Blue")
 call s:X("SpellRare","","540063","underline","","DarkMagenta")
 call s:X("SpellLocal","","2D7067","underline","","Green")
 
+" neovim built in lsp
+" From nvcode -- github.com/ChristianChiarulli/nvcode-color-schemes.vim
+if has('nvim')
+	call s:X("LspDiagnosticsUnderlineHint", "729cb3", "", "", "", "")
+	call s:X("LspDiagnosticsSignError","f44747", "", "","","")
+	call s:X("LspDiagnosticsSignWarning","ff8800", "", "","","")
+	call s:X("LspDiagnosticsSignInformation","ffcc66", "", "","","")
+	call s:X("LspDiagnosticsSignHint","4fc1ff", "", "","","")
+	call s:X("LspDiagnosticsVirtualTextError","f44747", "", "","","")
+	call s:X("LspDiagnosticsVirtualTextWarning","ff8800", "", "","","")
+	call s:X("LspDiagnosticsVirtualTextInformation","ffcc66", "", "","","")
+	call s:X("LspDiagnosticsVirtualTextHint","4fc1ff", "", "","","")
+endif
+
 " Diff
 
 hi! link diffRemoved Constant
